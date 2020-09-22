@@ -66,6 +66,8 @@ module.exports = configure(function (/* ctx */) {
       // https://quasar.dev/quasar-cli/handling-webpack
       extendWebpack (cfg) {
       },
+
+      
     },
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
@@ -160,7 +162,7 @@ module.exports = configure(function (/* ctx */) {
 
     // Full list of options: https://quasar.dev/quasar-cli/developing-electron-apps/configuring-electron
     electron: {
-      bundler: 'packager', // 'packager' or 'builder'
+      bundler: 'builder', // 'packager' or 'builder'
 
       packager: {
         // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
@@ -178,7 +180,8 @@ module.exports = configure(function (/* ctx */) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'net.tower22.open.weather'
+        appId: 'net.tower22.open.weather',
+        copyright: 'Copyright © 2020 ${author}'
       },
 
       // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration

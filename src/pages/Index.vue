@@ -109,8 +109,8 @@ export default defineComponent({
 .degree
   top: -44px
 .skyline
-  flex: 0 0 300px
+  // flex: 0 0 300px
   background: url(../../public/skyline.png)
-  background-size: contain
+  // background-size: contain
   background-position: bottom center
 </style>
